@@ -1,7 +1,5 @@
 package _11월_week2.BOJ12851_숨바꼭질_2
 
-import kotlin.collections.ArrayDeque
-
 /*
    BFS
    반례 케이스를 못찾겠다... (14% 틀림)
