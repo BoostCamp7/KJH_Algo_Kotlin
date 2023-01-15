@@ -5,6 +5,9 @@ package _2023._1월_week2.BOJ1501_영어_읽기
 
     Map 활용
     단어의 알파벳 개수를 Hash 로 만들어 저장
+
+    ababa
+    a120000000...a
  */
 
 fun main() = with(System.`in`.bufferedReader()) {

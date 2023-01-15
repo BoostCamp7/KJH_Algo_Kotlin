@@ -4,6 +4,7 @@ package _2023._1월_week2.BOJ2252_줄_세우기
     https://www.acmicpc.net/problem/2252
 
     위상 정렬 (자료: https://www.notion.so/bh1018/3a49636d9fb04bcc92a7005aa9544f1c)
+    * 노드가 32000개 이기 떄문에 인접 행렬로 풀면 메모리 초과 오류가 나기 때문에 인접 리스트로 풀어야 한다.
  */
 
 fun main() = with(System.`in`.bufferedReader()) {
