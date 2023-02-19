@@ -1,5 +1,21 @@
 package _2023._2월_week3.BOJ4095_최대_정사각형
 
+/*
+    https://www.acmicpc.net/problem/4095
+
+    DP
+
+    0 1 0 1 1
+    1 1 1 1 1
+    0 1 1 1 0
+    1 1 1 1 1
+    ->
+    0 1 0 1 1
+    1 1 1 1 2
+    0 1 2 2 1
+    1 1 2 3 1
+ */
+
 fun main() {
     while (true) {
         val (n, m) = readln().trim().split(" ").map { it.toInt() }
