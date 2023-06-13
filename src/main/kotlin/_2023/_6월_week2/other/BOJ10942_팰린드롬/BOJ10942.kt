@@ -1,4 +1,4 @@
-package _2023._6월_week2.BOJ10942_팰린드롬
+package _2023._6월_week2.other.BOJ10942_팰린드롬
 
 /*
     https://www.acmicpc.net/problem/10942
