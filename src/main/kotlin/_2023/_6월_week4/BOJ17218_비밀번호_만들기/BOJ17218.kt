@@ -1,6 +1,8 @@
 package _2023._6월_week4.BOJ17218_비밀번호_만들기
 
 /*
+    https://www.acmicpc.net/problem/17218
+
     DP
     최장 공통 문자열(LCS: Longest Common Substring)
  */
