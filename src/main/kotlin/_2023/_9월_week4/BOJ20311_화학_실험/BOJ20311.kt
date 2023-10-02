@@ -31,6 +31,34 @@ fun solution(n: Int, k: Int, counts: IntArray): String {
     }
 
     val answer = IntArray(n) { 0 }
+    val colors = Array(k) { Color(it + 1, counts[it]) }
+
+    colors.sortByDescending { it.count }
+
+    var index = 0
+
+    for (i in 0 until k) {
+        repeat(colors[i].count) {
+            answer[index] = colors[i].num
+            index += 2
+
+            if (index >= n) {
+                index = 1
+            }
+        }
+    }
+
+    return answer.joinToString(" ")
+}
+
+/* 정렬 없는 풀이 : 서브태스크2 런타임 오류
+fun solution(n: Int, k: Int, counts: IntArray): String {
+    val half = (n + 1) / 2
+    for (count in counts) {
+        if (count > half) return "-1"
+    }
+
+    val answer = IntArray(n) { 0 }
 
     var evenIdx = 0
     var oddIdx = 1
@@ -49,3 +77,4 @@ fun solution(n: Int, k: Int, counts: IntArray): String {
 
     return answer.joinToString(" ")
 }
+ */
